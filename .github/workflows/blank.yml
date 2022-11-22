@@ -29,6 +29,7 @@ jobs:
 
       - name: Count lines
         run: |
+          ls -l
           cd serenity
           rgrep FIXME | wc -l
 
