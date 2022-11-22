@@ -26,9 +26,8 @@ jobs:
       - uses: actions/checkout@v3
         with:
           repository: serenityos/serenity
-          ref: refs/heads/release
 
-      - name: Run a multi-line script
+      - name: Count lines
         run: |
           cd serenity
           rgrep FIXME | wc -l
