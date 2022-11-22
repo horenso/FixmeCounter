@@ -30,6 +30,5 @@ jobs:
       - name: Count lines
         run: |
           ls -l
-          cd serenity
-          rgrep FIXME | wc -l
+          git grep -nE '(TODO|FIXME)' | wc -l
 
