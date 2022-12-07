@@ -11,7 +11,7 @@ git config core.pager cat
 get_youngest_commits
 echo ${commit_list}
 
-N=16
+N=4
 ITER=0
 for i in ${commits_list}
 do
@@ -24,5 +24,3 @@ do
         >&2 echo "[$ITER done]"
     } &
 done
-
-get_fixme_count 'a3fb19fe9c7f810bc997977eadb6ddb63e45cf93'
